@@ -35,3 +35,29 @@ console.log(typeof myObj);                  //funciton object
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack (Primitive), Heap( Non Primitive)
+
+let myName = "prashantkumar"
+
+let anotherName = myName                     //pass by value
+anotherName = "kumarprashant"
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+    email: "prashant@google.com",
+    upi: "user@ybi"
+}
+
+let userTwo = userOne                        //pass by reference
+
+userTwo.email = "kumar@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
